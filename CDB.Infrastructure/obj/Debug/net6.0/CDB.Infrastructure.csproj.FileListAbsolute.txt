@@ -1,0 +1,11 @@
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\bin\Debug\net6.0\CDB.Infrastructure.deps.json
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\bin\Debug\net6.0\CDB.Infrastructure.dll
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\bin\Debug\net6.0\ref\CDB.Infrastructure.dll
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\bin\Debug\net6.0\CDB.Infrastructure.pdb
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\CDB.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\CDB.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\CDB.Infrastructure.AssemblyInfo.cs
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\CDB.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\CDB.Infrastructure.dll
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\ref\CDB.Infrastructure.dll
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Infrastructure\obj\Debug\net6.0\CDB.Infrastructure.pdb

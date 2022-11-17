@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "nAP6GOrFBZfYJ/C1vQdXHX7ybngIlVVU4nwwjoxcxA4eCttL2+jhHUokvFexevrHC2EkjuV26FepiKRcdYfRfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Igor\\source\\repos\\CDB\\CDB\\CDB.Infrastructure\\CDB.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Igor\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

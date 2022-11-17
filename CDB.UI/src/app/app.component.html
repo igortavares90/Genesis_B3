@@ -1,0 +1,23 @@
+<html>
+  <body>
+      <div class="row col-lg-12 col-mb-12 col-sm-12">
+      <div class="row col-lg-3 col-mb-3 col-sm-3 col-xs-3">
+        <span>Valor Inicial:</span>
+      </div>
+      <div class="row col-lg-3 col-mb-3 col-sm-3 col-xs-3">
+        <input type="text" name="InitialValue" [(ngModel)]="initialValue">
+      </div><br/>
+      <div><span>Meses: </span></div>
+        <input type="text" name="numberOfMonths" [(ngModel)]="numberOfMonths">
+      <div>
+      <br/>
+        <span>Valor final da aplicação: R$ {{ model?.finalValue}}</span>
+      </div>
+      <div>
+        <span>Imposto: R$ {{model?.tax}}</span>
+      </div>
+      <br/>
+        <button type="button" (click)="getCDB()">calcular</button>
+      </div>
+  </body>
+</html>

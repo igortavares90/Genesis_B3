@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "407faf4b-c641-4bec-aeab-b9aa1cf29489": {
+      "ProjectGuid": "407faf4b-c641-4bec-aeab-b9aa1cf29489",
+      "DisplayName": "CDB",
+      "ColorIndex": 0
+    },
+    "a2e6c2ff-27a9-4a19-b87e-2b3f58251ce9": {
+      "ProjectGuid": "a2e6c2ff-27a9-4a19-b87e-2b3f58251ce9",
+      "DisplayName": "CDB.Domain",
+      "ColorIndex": 1
+    },
+    "144b0d4b-735d-4c6e-809e-24314d293d1a": {
+      "ProjectGuid": "144b0d4b-735d-4c6e-809e-24314d293d1a",
+      "DisplayName": "CDB.Infrastructure",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
