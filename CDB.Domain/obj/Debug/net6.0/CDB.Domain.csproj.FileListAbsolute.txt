@@ -21,3 +21,4 @@ C:\Users\Igor\source\repos\CDB\CDB\CDB.Domain\obj\Debug\net6.0\CDB.Domain.csproj
 C:\Users\Igor\source\repos\CDB\CDB\CDB.Domain\obj\Debug\net6.0\CDB.Domain.dll
 C:\Users\Igor\source\repos\CDB\CDB\CDB.Domain\obj\Debug\net6.0\ref\CDB.Domain.dll
 C:\Users\Igor\source\repos\CDB\CDB\CDB.Domain\obj\Debug\net6.0\CDB.Domain.pdb
+C:\Users\Igor\source\repos\CDB\CDB\CDB.Domain\obj\Debug\net6.0\CDB.Domain.csproj.AssemblyReference.cache

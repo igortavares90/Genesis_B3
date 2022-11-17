@@ -33,22 +33,7 @@ namespace CDB.Controllers
         return BadRequest(result);
       }
 
-      double finalValue = cdb.InitialValue;
-      double TB = 1.08;
-      double CDI = 0.009;
-
-      double monthlyIncomeCDB = 0;
-
-      for (int i = 1; i <= cdb.NumberOfMonths; i++)
-      {
-        monthlyIncomeCDB = finalValue * (1 + (CDI * TB));
-
-        finalValue = monthlyIncomeCDB;
-      }
-
-      double tax = _cdbService.GetTaxRate(cdb.NumberOfMonths) * finalValue;
-
-      var data = new CalculateCDBCommandResult { finalValue = Math.Round(finalValue, 2), tax = Math.Round(tax, 2) };
+      var data = _cdbService.calculateCDB(cdb);
 
       return new OkObjectResult(data);
     }

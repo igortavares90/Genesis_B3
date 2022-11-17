@@ -1,4 +1,6 @@
-﻿using CDB.Domain.Interfaces;
+﻿using CDB.Domain.Commands.Input;
+using CDB.Domain.Commands.Output;
+using CDB.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,28 @@ namespace CDB.Domain.Service
             }
 
             return taxRate;
+        }
+
+        public CalculateCDBCommandResult calculateCDB(CalculateCDBCommand cdb)
+        {
+            double finalValue = cdb.InitialValue;
+            double TB = 1.08;
+            double CDI = 0.009;
+
+            double monthlyIncomeCDB = 0;
+
+            for (int i = 1; i <= cdb.NumberOfMonths; i++)
+            {
+                monthlyIncomeCDB = finalValue * (1 + (CDI * TB));
+
+                finalValue = monthlyIncomeCDB;
+            }
+
+            double tax = GetTaxRate(cdb.NumberOfMonths) * finalValue;
+
+            var data = new CalculateCDBCommandResult { finalValue = Math.Round(finalValue, 2), tax = Math.Round(tax, 2) };
+
+            return data;
         }
     }
 }
