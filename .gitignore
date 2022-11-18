@@ -1,1 +1,5 @@
 /CDB.UI/node_modules
+/CDB/bin
+/CDB.Domain/bin
+/CDB/obj
+/CDB.Domain/obj
