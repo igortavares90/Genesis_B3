@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CDB.Domain.Validators
 {
-    public class CDBValidator : AbstractValidator<CalculateCDBCommand>
+    public class CdbValidator : AbstractValidator<CalculateCdbCommand>
     {
-        public CDBValidator()
+        public CdbValidator()
         {
             RuleFor(x => x.InitialValue)
                 .NotEmpty().WithMessage("Informe o valor inicial.")

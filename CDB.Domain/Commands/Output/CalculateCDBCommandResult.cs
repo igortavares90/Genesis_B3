@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CDB.Domain.Commands.Output
 {
-    public class CalculateCDBCommandResult
+    public class CalculateCdbCommandResult
     {
-        public double finalValue { get; set; }
-        public double tax { get; set; }
+        public double FinalValue { get; set; }
+        public double Tax { get; set; }
     }
 }

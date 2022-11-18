@@ -6,6 +6,28 @@ namespace CDB.Domain.Service
 {
     public class CdbService : ICdbService
     {
+        public CalculateCdbCommandResult CalculateCDB(CalculateCdbCommand cdb)
+        {
+            double FinalValue = cdb.InitialValue;
+            double Tb = 1.08;
+            double Cdi = 0.009;
+
+            double MonthlyIncomeCDB;
+
+            for (int i = 1; i <= cdb.NumberOfMonths; i++)
+            {
+                MonthlyIncomeCDB = FinalValue * (1 + (Cdi * Tb));
+
+                FinalValue = MonthlyIncomeCDB;
+            }
+
+            double Tax = GetTaxRate(cdb.NumberOfMonths) * FinalValue;
+
+            var Data = new CalculateCdbCommandResult { FinalValue = Math.Round(FinalValue, 2), Tax = Math.Round(Tax, 2) };
+
+            return Data;
+        }
+
         public double GetTaxRate(int MonthQuantity)
         {
             double taxRate = 0;
@@ -26,28 +48,6 @@ namespace CDB.Domain.Service
             }
 
             return taxRate;
-        }
-
-        public CalculateCDBCommandResult CalculateCDB(CalculateCDBCommand cdb)
-        {
-            double finalValue = cdb.InitialValue;
-            double TB = 1.08;
-            double CDI = 0.009;
-
-            double monthlyIncomeCDB;
-
-            for (int i = 1; i <= cdb.NumberOfMonths; i++)
-            {
-                monthlyIncomeCDB = finalValue * (1 + (CDI * TB));
-
-                finalValue = monthlyIncomeCDB;
-            }
-
-            double tax = GetTaxRate(cdb.NumberOfMonths) * finalValue;
-
-            var data = new CalculateCDBCommandResult { finalValue = Math.Round(finalValue, 2), tax = Math.Round(tax, 2) };
-
-            return data;
         }
     }
 }

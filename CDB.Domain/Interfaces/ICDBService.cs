@@ -10,7 +10,7 @@ namespace CDB.Domain.Interfaces
 {
     public interface ICdbService
     {
-        double GetTaxRate(int MonthQuantity);
-        public CalculateCDBCommandResult CalculateCDB(CalculateCDBCommand cdb);
+        public CalculateCdbCommandResult CalculateCDB(CalculateCdbCommand cdb);
+        public double GetTaxRate(int MonthQuantity);
     }
 }

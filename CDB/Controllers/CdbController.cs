@@ -11,9 +11,9 @@ namespace CDB.Controllers
     [Route("[controller]")]
     public class CdbController : ControllerBase
     {
-        private readonly CDBValidator _validator;
+        private readonly CdbValidator _validator;
         private readonly ICdbService _cdbService;
-        public CdbController(CDBValidator validator, ICdbService cdbService)
+        public CdbController(CdbValidator validator, ICdbService cdbService)
         {
             _validator = validator;
             _cdbService = cdbService;
@@ -21,8 +21,8 @@ namespace CDB.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(void), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(CalculateCDBCommandResult), StatusCodes.Status200OK)]
-        public async Task<ActionResult> CalculateCDB([FromQuery] CalculateCDBCommand cdb)
+        [ProducesResponseType(typeof(CalculateCdbCommandResult), StatusCodes.Status200OK)]
+        public async Task<ActionResult> CalculateCDB([FromQuery] CalculateCdbCommand cdb)
         {
             ValidationResult result = await _validator.ValidateAsync(cdb);
 
