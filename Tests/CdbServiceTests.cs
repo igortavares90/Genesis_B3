@@ -39,5 +39,18 @@ namespace Tests
 
             Assert.Equal("Quantidade de meses deve ser maior que zero.", exception.Message);
         }
+
+        [Fact]
+        public void CalculateCDBSuccess()
+        {
+            var cdbCommand = new CalculateCdbCommand();
+
+            cdbCommand.InitialValue = 10;
+            cdbCommand.NumberOfMonths = 1;
+
+            var cdb = cdbService.CalculateCDB(cdbCommand);
+
+            Assert.True(cdb.FinalValue > 0);
+        }
     }
 }
