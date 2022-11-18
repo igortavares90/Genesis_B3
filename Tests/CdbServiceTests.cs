@@ -1,5 +1,4 @@
 using CDB.Domain.Commands.Input;
-using CDB.Domain.Commands.Output;
 using CDB.Domain.Service;
 using System;
 using Xunit;
@@ -24,7 +23,7 @@ namespace Tests
 
             var exception = Assert.Throws<Exception>(() => cdbService.CalculateCDB(cdbCommand));
 
-            Assert.Equal("Valor deve ser maior que zero.",exception.Message);
+            Assert.Equal("Valor deve ser maior que zero.", exception.Message);
         }
 
         [Fact]
