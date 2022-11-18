@@ -23,7 +23,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMvc();
-builder.Services.AddScoped<ICDBService, CDBService>();
+builder.Services.AddScoped<ICdbService, CdbService>();
 builder.Services.AddValidatorsFromAssemblyContaining<CDBValidator>();
 
 

@@ -1,15 +1,10 @@
 ﻿using CDB.Domain.Commands.Input;
 using CDB.Domain.Commands.Output;
 using CDB.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CDB.Domain.Service
 {
-    public class CDBService: ICDBService
+    public class CdbService : ICdbService
     {
         public double GetTaxRate(int MonthQuantity)
         {
@@ -33,13 +28,13 @@ namespace CDB.Domain.Service
             return taxRate;
         }
 
-        public CalculateCDBCommandResult calculateCDB(CalculateCDBCommand cdb)
+        public CalculateCDBCommandResult CalculateCDB(CalculateCDBCommand cdb)
         {
             double finalValue = cdb.InitialValue;
             double TB = 1.08;
             double CDI = 0.009;
 
-            double monthlyIncomeCDB = 0;
+            double monthlyIncomeCDB;
 
             for (int i = 1; i <= cdb.NumberOfMonths; i++)
             {

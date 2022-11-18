@@ -7,35 +7,33 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CDB.Controllers
 {
-  [ApiController]
-  [Route("[controller]")]
-  public class CDBController : ControllerBase
-  {
-    private readonly ILogger<CDBController> _logger;
-    private CDBValidator _validator;
-    private ICDBService _cdbService;
-    public CDBController(ILogger<CDBController> logger, CDBValidator validator, ICDBService cdbService)
+    [ApiController]
+    [Route("[controller]")]
+    public class CdbController : ControllerBase
     {
-      _validator = validator;
-      _logger = logger;
-      _cdbService = cdbService;
+        private readonly CDBValidator _validator;
+        private readonly ICdbService _cdbService;
+        public CdbController(CDBValidator validator, ICdbService cdbService)
+        {
+            _validator = validator;
+            _cdbService = cdbService;
+        }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(void), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(CalculateCDBCommandResult), StatusCodes.Status200OK)]
+        public async Task<ActionResult> CalculateCDB([FromQuery] CalculateCDBCommand cdb)
+        {
+            ValidationResult result = await _validator.ValidateAsync(cdb);
+
+            if (!result.IsValid)
+            {
+                return BadRequest(result);
+            }
+
+            var data = _cdbService.CalculateCDB(cdb);
+
+            return new OkObjectResult(data);
+        }
     }
-
-    [HttpGet]
-    [ProducesResponseType(typeof(void), (int)StatusCodes.Status404NotFound)]
-    [ProducesResponseType(typeof(CalculateCDBCommandResult), (int)StatusCodes.Status200OK)]
-    public async Task<ActionResult> CalculateCDB([FromQuery] CalculateCDBCommand cdb)
-    {
-      ValidationResult result = await _validator.ValidateAsync(cdb);
-
-      if (!result.IsValid)
-      {
-        return BadRequest(result);
-      }
-
-      var data = _cdbService.calculateCDB(cdb);
-
-      return new OkObjectResult(data);
-    }
-  }
 }

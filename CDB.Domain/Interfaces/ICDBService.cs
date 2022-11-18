@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CDB.Domain.Interfaces
 {
-    public interface ICDBService
+    public interface ICdbService
     {
         double GetTaxRate(int MonthQuantity);
-        public CalculateCDBCommandResult calculateCDB(CalculateCDBCommand cdb);
+        public CalculateCDBCommandResult CalculateCDB(CalculateCDBCommand cdb);
     }
 }
