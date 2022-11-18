@@ -4,7 +4,7 @@ using CDB.Domain.Interfaces;
 
 namespace CDB.Domain.Service
 {
-    public class CdbService : ICdbService
+    public class CdbService_ : ICdbService
     {
         public double GetTaxRate(int MonthQuantity)
         {
