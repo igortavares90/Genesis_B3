@@ -30,6 +30,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CDB.UI", "CDB.UI\", "{51CF7
 		SlnRelativePath = "CDB.UI\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{B5B0F721-BEF1-4BB6-9929-A9B37A71406B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B5B0F721-BEF1-4BB6-9929-A9B37A71406B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B0F721-BEF1-4BB6-9929-A9B37A71406B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B0F721-BEF1-4BB6-9929-A9B37A71406B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B0F721-BEF1-4BB6-9929-A9B37A71406B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

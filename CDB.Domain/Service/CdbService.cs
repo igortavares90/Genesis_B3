@@ -8,6 +8,16 @@ namespace CDB.Domain.Service
     {
         public CalculateCdbCommandResult CalculateCDB(CalculateCdbCommand cdb)
         {
+            if (cdb.InitialValue == 0)
+            {
+                throw new Exception("Valor deve ser maior que zero.");
+            }
+
+            if (cdb.NumberOfMonths == 0)
+            {
+                throw new Exception("Quantidade de meses deve ser maior que zero.");
+            }
+
             double FinalValue = cdb.InitialValue;
             double Tb = 1.08;
             double Cdi = 0.009;
