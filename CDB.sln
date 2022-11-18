@@ -9,6 +9,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{449D0BF9-5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDB.Domain", "CDB.Domain\CDB.Domain.csproj", "{A2E6C2FF-27A9-4A19-B87E-2B3F58251CE9}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CDB.UI", "CDB.UI\", "{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55694"
+		Debug.AspNetCompiler.PhysicalPath = "CDB.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55694\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55694"
+		Release.AspNetCompiler.PhysicalPath = "CDB.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55694\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55694"
+		SlnRelativePath = "CDB.UI\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +44,10 @@ Global
 		{A2E6C2FF-27A9-4A19-B87E-2B3F58251CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2E6C2FF-27A9-4A19-B87E-2B3F58251CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2E6C2FF-27A9-4A19-B87E-2B3F58251CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CF711F-4C5F-493E-8FA7-3D1AF98E08BC}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
